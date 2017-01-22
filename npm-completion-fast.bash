@@ -37,7 +37,7 @@ _npm()
                 opts=$(node -p -e "$packageScripts")
             fi
             ;;
-        update)
+        update|un|uninstall)
             if [ -f 'package.json' ]; then
                 opts=$(node -p -e "$packageDeps")
             fi
